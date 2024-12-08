@@ -1,0 +1,61 @@
+.lastname {
+    color: rgb(58, 159, 193);
+    
+}
+.firstname {
+    color: rgb(119, 119, 119);
+}
+.email {
+    color: blue;
+}
+.imgheight{
+    height: 100px;
+    width: auto;
+}
+.worldcup {
+    width: auto;
+    margin-right: 20px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-container {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between;
+}
+ol {
+    list-style-position: inside;
+}
+.worldcup-video {
+    width: auto;
+    margin-right: 20px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+.background {
+    background-color: rgb(217, 243, 244);
+}
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+}
+li {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: c='Times New Roman', Times, serif;
+    color: black;
+}
+.anchor {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+.header h1{
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+}
