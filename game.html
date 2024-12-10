@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is Your Favorite Food?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #99d9f9;
+      margin: 0;
+      flex-direction: column;
+    }
+    .question {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    input {
+      font-size: 20px;
+      padding: 10px;
+      width: 300px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="question">What is your favorite food?</div>
+  <input type="text" id="favoriteFood" placeholder="Type your answer here" />
+
+  <script>
+    const inputField = document.getElementById('favoriteFood');
+
+    inputField.addEventListener('input', function(event) {
+      let typedValue = event.target.value;
+      let transformedValue = '';
+
+      // Transform each character typed into a random character to confuse the user
+      for (let i = 0; i < typedValue.length; i++) {
+        let randomChar = String.fromCharCode(Math.floor(Math.random() * 26) + 97); // random lowercase letter
+        transformedValue += randomChar;
+      }
+
+      event.target.value = transformedValue;
+    });
+  </script>
+</body>
+</html>
